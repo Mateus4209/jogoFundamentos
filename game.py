@@ -2,6 +2,12 @@ import pygame
 import random
 import time
 
+nomeJogador = input("Por favor, digite seu nome! \n")
+emailJogador = input("Por favor, digite seu e-mail! \n")
+with open('Nome_Email.txt','w') as arquivo:
+    arquivo.write(nomeJogador+"\n")
+    arquivo.write(emailJogador+"\n")
+
 pygame.init()
 
 icone = pygame.image.load("assets/corona.png")
